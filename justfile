@@ -61,11 +61,7 @@ EOF
 
     echo ""
     echo "✅ Created: $filepath"
-    echo ""
-    echo "Next steps:"
-    echo "  1. Edit the post:  \$EDITOR $filepath"
-    echo "  2. Preview locally: npm run dev"
-    echo "  3. Publish:         git add $filepath && git commit -m \"Add post: ${slug}\" && git push"
+    nvim "$filepath"
 
 # Start the dev server
 dev:
