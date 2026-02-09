@@ -1,7 +1,7 @@
 # AI Gardener blog tasks
 
 # Create a new blog post with an interactive walkthrough
-new-post:
+post:
     #!/usr/bin/env bash
     set -euo pipefail
 
