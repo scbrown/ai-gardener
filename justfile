@@ -63,6 +63,10 @@ EOF
     echo "✅ Created: $filepath"
     nvim "$filepath"
 
+    git add "$filepath"
+    git commit -m "Add post: ${slug}"
+    git push
+
 # Start the dev server
 dev:
     npm run dev
