@@ -25,7 +25,7 @@
   color-scheme: dark;
 }
 
-html { font-family: system-ui, -apple-system, sans-serif; }
+html { font-family: 'Intel One Mono', ui-monospace, monospace; }
 
 body {
   background: var(--color-bg);
@@ -47,7 +47,7 @@ pre {
 }
 
 code {
-  font-family: ui-monospace, 'Cascadia Code', 'Fira Code', monospace;
+  font-family: 'Intel One Mono', ui-monospace, monospace;
   font-size: 0.9em;
 }
 
