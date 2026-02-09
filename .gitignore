@@ -1,0 +1,13 @@
+# Gas Town workspace
+.runtime/
+.claude/
+.logs/
+.beads/
+state.json
+mail/
+
+# Astro / Node
+node_modules/
+dist/
+.astro/
+.DS_Store

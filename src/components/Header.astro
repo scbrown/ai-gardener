@@ -1,0 +1,15 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+---
+<header>
+  <nav>
+    <a href={`${import.meta.env.BASE_URL}`}>AI Gardener</a>
+    <ThemeToggle />
+  </nav>
+</header>
+
+<style>
+  header { padding: 1.5rem 0; border-bottom: 1px solid var(--color-border); margin-bottom: 2rem; }
+  nav { display: flex; justify-content: space-between; align-items: center; }
+  a { text-decoration: none; font-weight: 700; font-size: 1.25rem; }
+</style>

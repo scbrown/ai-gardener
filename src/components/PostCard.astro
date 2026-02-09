@@ -1,0 +1,24 @@
+---
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  slug: string;
+}
+const { title, description, pubDate, slug } = Astro.props;
+---
+<article class="post-card">
+  <h2><a href={`${import.meta.env.BASE_URL}blog/${slug}/`}>{title}</a></h2>
+  <p class="date"><FormattedDate date={pubDate} /></p>
+  <p>{description}</p>
+</article>
+
+<style>
+  .post-card { margin-bottom: 2rem; }
+  h2 { margin-bottom: 0.25rem; }
+  h2 a { text-decoration: none; }
+  h2 a:hover { text-decoration: underline; }
+  .date { color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 0.5rem; }
+</style>
